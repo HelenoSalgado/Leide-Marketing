@@ -111,6 +111,17 @@
            margin: 2rem;
            font-size: 1.5rem;  
         }
+        footer p a{
+            text-decoration: none;
+            color: white;
+            font-style: oblique;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 100;
+        }
+        footer p i{
+            margin-left: 1rem;
+            color: #ffcfd9;
+        }
         @media screen and (max-width: 750px){
             .capa-img{
             width: 150px;
@@ -174,7 +185,21 @@
         <div class="medias-sociais">
             <a href="mailto:leide.salgadomkt@gmail.com?subject=[Escreva o Assunto Aqui]"><i class="far fa-envelope"></i></a>
             <a href="https://www.instagram.com/leidemara_salgado_oficial/"><i class="fab fa-instagram"></i></a>
-        </div>  
+        </div>
+        <p><a href="javascript:void(0)" onclick="share()">leidemarketing.com</a><i class="fas fa-share-alt"></i></p>  
     </footer>
+    <script>
+    function share(){
+        if (navigator.share !== undefined) {
+            navigator.share({
+                title: 'Leide Marketing',
+                text: 'Aqui estão todos os cursos que indico para que você tenha sucesso financeiro com o marketing digital.',
+                url: 'https://leidemarketing',
+            })
+            .then(() => console.log('Successful share'))
+            .catch((error) => console.log('Error sharing', error));
+        }
+    }
+    </script>
 </body>
 </html>
