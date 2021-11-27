@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="esmaecer">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -122,6 +122,49 @@
             margin-left: 1rem;
             color: #ffcfd9;
         }
+        .animation-1{
+            display: inline-block;
+            -o-animation: indicacao 1s infinite alternate;
+            -moz-animation: indicacao 1s infinite alternate;
+            -webkit-animation: indicacao 1s infinite alternate;
+            animation: indicacao 1s infinite alternate;
+        }
+        @keyframes indicacao {
+            from {
+            transform: translateY(0);
+            }
+            to {
+            transform: translateY(20px);
+            }
+        }
+        .esmaecer {
+            -o-animation: esmaecer 1s ease-in;
+            -moz-animation: esmaecer 1s ease-in;
+            -webkit-animation: esmaecer 1s ease-in;
+            animation: esmaecer 1s ease-in;
+        }
+        @keyframes esmaecer{
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .animation-2{
+            -o-animation: link-1 1s infinite alternate;
+            -moz-animation: link-1 1s infinite alternate;
+            -webkit-animation: link-1 1s infinite alternate;
+            animation: link-1 1s infinite alternate;
+        }
+        @keyframes link-1{
+            from {
+               opacity: .5;
+            }
+            to {
+                opacity: 1;
+            }
+        }
         @media screen and (max-width: 750px){
             .capa-img{
             width: 150px;
@@ -150,13 +193,13 @@
     <div class="titulo">
         <h2>Leidemara Salgado</h2>
         <h1>O Conhecimento é a Chave para o Sucesso.</h1>
-        <em><p style="font-size: 14px;">Minhas indicações &#128071;</p></em>
+        <em><p style="font-size: 14px;">Minhas indicações <span class="animation-1">&#128071;</span></p></em>
     </div>
 </header>
 <body>
     <div>
-    <section class="links">
-        <div>
+    <section class="links links-animation" >
+        <div class="animation-2">
             <p><a href="https://contato.site/e6745636fa/rotina-de-sucesso-20/copia-223570bd3">Curso Gratuito | Cadastre Agora</a></p>
         </div>
         <div>
