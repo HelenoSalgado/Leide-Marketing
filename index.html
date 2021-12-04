@@ -24,6 +24,8 @@
 <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet"> -->
+<!-- Biblioteca de animacões conforme scroll. -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
@@ -35,10 +37,11 @@
             position: relative;
             margin-top: 0;
             font-size: 16px;
+            background: rgb(224, 222, 222);
             background-image: url(laptop-Leide-Marketing.jpg);
-            background-repeat:repeat-y;
-            background-size: 100%;
-            height: fit-content;
+            background-repeat: repeat-y;
+            background-size: cover;
+            height: max-content;
             font-family: 'Poppins', sans-serif;
         }
         :root {
@@ -70,9 +73,9 @@
             position: relative;
             padding-top: .5rem;
             width: 100%;
-            height: 60vh;
+            height: auto;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.445);
+            background-color: rgba(0, 0, 0, 0.562);
             border-bottom: 1px solid violet;
         }
         header h1{
@@ -108,7 +111,7 @@
             margin: 1rem auto;
             border-radius: 3px;
             border: 1px solid violet;
-            background-color: #8c5b6556;
+            background-color: #8c5b6585;
             /* background-color: #ffcfd9; */
         }
         .links p{
@@ -124,7 +127,7 @@
         }
         .links a{
             text-decoration: none;
-            color: #fff;
+            color: white;
         }
         footer{
             margin-top: 4rem;  
@@ -168,7 +171,7 @@
                 opacity: 1;
             }
         }
-        .animation-1{
+        /* .animation-1{
             display: inline-block;
             -o-animation: indicacao 1s infinite alternate;
             -moz-animation: indicacao 1s infinite alternate;
@@ -185,7 +188,7 @@
                 transform:rotate(360deg);
             }
         } 
-        /* .animation-2{
+        .animation-2{
             -o-animation: link-1 .3s infinite alternate;
             -moz-animation: link-1 .3s infinite alternate;
             -webkit-animation: link-1 .3s infinite alternate;
@@ -232,34 +235,34 @@
         <!-- <em><p class="animation-1" style="font-size: 14px;">Minhas indicações <span>&#128071;</span></p></em> -->
     </div>
 </header>
-<div class="animation-1"></div>
+<!-- <div class="animation-1"></div> -->
     <section class="links">
-        <div class="animation-2">
+        <div data-aos="fade-up">
             <p><a href="https://contato.site/e6745636fa/rotina-de-sucesso-20/copia-223570bd3">Curso Gratuito | Cadastre Agora</a></p>
         </div>
-        <div>
+        <div data-aos="fade-up">
             <p><a href="https://p.eduzz.com/1033165?a=75848140">Escola de top afiliados ETA  Mentoria + Suporte | BLACK FRIDAY</a></p>
         </div>
-        <div>
+        <div data-aos="fade-up">
              <p><a href="https://edzz.la/IRGTX?a=75848140&utm_source=Site&a=75848140">Mini curso Af de sucesso + Bônus treinamento completo</a></p>
         </div>
-        <div>
+        <div data-aos="fade-up">
              <p><a href="https://p.eduzz.com/856278?a=75848140">Destrave suas Vendas | Consultoria Online</a></p>
         </div>
-        <div>
+        <div data-aos="fade-up">
             <p><a href="https://edzz.la/85XWE?a=75848140&utm_source=Site&a=75848140">Primeira Venda em 48h Passo a Passo</a></p>
         </div>
         <!-- <div>
             <p><a href="https://p.eduzz.com/972184?a=NaN">E-book Stories que vendem | Estratégias + Engajamento</a></p>
         </div> -->
-        <div>
+        <div data-aos="fade-up">
             <p><a href="https://edzz.la/0HTBO?a=75848140">Mente de um Campeão | tenha mentalidade de sucesso</a></p>
         </div>
-        <div>
+        <div data-aos="fade-up">
             <p><a href="https://edzz.la/VHDSP?a=75848140">Mega Pack Canva +2000 modelos Editáveis  profissionais+ Aula bônus 
             </a></p>
         </div>
-        <div>
+        <div data-aos="fade-up">
             <p><a href="https://bit.ly/Leidemarasalgado2">Se tiver dúvidas, é só chamar!</a></p>
         </div>
     </section>
@@ -285,5 +288,19 @@
     }
     </script>
 </div>
+<!-- Script da animação com scroll. -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+ //    aos: fade-up,
+ //    offset: 200,
+ //    delay: 50,
+ //    easing: ease-in-out,
+ //    mirror: true,
+ //    once: false,
+ //    placement: top-center,
+});
+</script>
 </body>
 </html>
