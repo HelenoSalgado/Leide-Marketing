@@ -36,7 +36,7 @@
         body{
             position: relative;
             font-size: 16px;
-            background: rgb(224, 222, 222);
+            background: rgb(41, 40, 40);
             background-image: url(laptop-1080.jpg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -47,7 +47,7 @@
             --font-action: 'Mulish', sans-serif;
 }
         .filtro{
-            background: -webkit-linear-gradient(#ffcfd985, #d4a7b083, #db91a09a, #6b4950be);
+            background-image: linear-gradient(50deg,#000000c4 0%, #f50b0b81 100%);
         }
         h1, h2{
             font-family: var(--font-primary);
@@ -72,7 +72,7 @@
             width: 100%;
             height: auto;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.562);
+            background-color: rgba(44, 44, 44, 0.904);
             border-bottom: 1px solid red;
         }
         header h1{
@@ -82,47 +82,35 @@
             width: fit-content;
             padding: .5rem;
             border-radius: 10px;
-            /* border-top: .5px solid red; */
-            text-decoration: .5px underline red;
         }
         header  h2{
             font-size: 1.3rem;
             margin: 1rem auto;
             padding: .3rem;
             color: white; 
-            /* width: fit-content;
-            background-color: rgba(233, 27, 205, 0.541);
-            border-top-left-radius: 40%;
-            border-bottom-right-radius: 40%; */
         }
-        .animation-1{
-            margin-top: 1rem;
-            width: 30px;
-            height: 30px
-        }
-        .links{
+        section{
             margin-top: 3rem;
         }
-        .links div{
+        section div{
             width: 80%;
             height: auto;
             margin: 1rem auto;
             border-radius: 3px;
             border: 1px solid red;
-            background-color: #8c5b6585;
-            /* background-color: #ffcfd9; */
+            background-color: #22212185;
         }
-        .links p{
+        section div > p{
             font-size: 1.2rem;
             margin: 1rem .5rem; 
             text-align: center;
             line-height: 1.1rem;
         }
-        .links p :hover{
-            color: black;
-            background-color: turquoise;
+        section div > p :hover{
+            color: red;
+            background-color: white;
         }
-        .links a{
+        section div a{
             text-decoration: none;
             color: white;
         }
@@ -140,17 +128,20 @@
             transition: .3s ease-in-out;
         } 
         footer a :hover{
-            color: turquoise;
+            color: rgb(241, 203, 203);
         }
-        footer p a{
+        footer a{
             text-decoration: none;
             color: white;
-            font-style: italic;
             font-size: .9rem;
+        }
+        footer > p{
+            color: white;
+            padding-bottom: 1rem;
         }
         footer i{
             margin: .5rem;
-            font-size: 1rem; 
+            font-size: 1.1rem; 
             color: white;
         }
         .esmaecer {
@@ -167,37 +158,6 @@
                 opacity: 1;
             }
         }
-        /* .animation-1{
-            display: inline-block;
-            -o-animation: indicacao 1s infinite alternate;
-            -moz-animation: indicacao 1s infinite alternate;
-            -webkit-animation: indicacao 1s infinite alternate;
-            animation: indicacao 1s infinite alternate;
-        }
-        @keyframes indicacao {
-            from {
-                background-color: violet;
-                transform:rotate(-360deg);
-            }
-            to {
-                background-color: turquoise;
-                transform:rotate(360deg);
-            }
-        } 
-        .animation-2{
-            -o-animation: link-1 .3s infinite alternate;
-            -moz-animation: link-1 .3s infinite alternate;
-            -webkit-animation: link-1 .3s infinite alternate;
-            animation: link-1 .3s infinite alternate;
-        }
-        @keyframes link-1{
-            from {
-                border: .5px solid white;
-            }
-            to {
-                border: .5px solid red;
-            }
-        } */
         @media screen and (max-width: 750px){
             .capa-img{
             width: 150px;
@@ -209,12 +169,12 @@
             header h2{
                 font-size: 1.1rem;
             }
-            .links p{
+            section div > p{
                 margin: .5rem .5rem; 
                 font-size: 1rem;
                 font-weight: bold;
             }
-            .links div{
+            section div{
                 width: 95%;
             }
         }
@@ -229,10 +189,8 @@
     <div>
         <h2>Leidemara Salgado</h2>
         <h1>O Conhecimento é a Chave para o Sucesso.</h1>
-        <!-- <em><p class="animation-1" style="font-size: 14px;">Minhas indicações <span>&#128071;</span></p></em> -->
     </div>
 </header>
-<!-- <div class="animation-1"></div> -->
     <section class="links">
         <div data-aos="fade-up">
             <p><a href="https://contato.site/e6745636fa/rotina-de-sucesso-20/copia-223570bd3">Curso Gratuito | Cadastre Agora</a></p>
@@ -265,11 +223,11 @@
     </section>
     <footer>
         <div>
-            <!-- <a href="mailto:leide.salgadomkt@gmail.com?subject=[Escreva o Assunto Aqui]"><i class="far fa-envelope"></i></a> -->
+            <a href="mailto:leide.salgadomkt@gmail.com?subject=[Escreva o Assunto Aqui]"><i class="far fa-envelope"></i></a>
             <a href="https://www.instagram.com/leidemara_salgado_oficial/"><i class="fab fa-instagram"></i></a>
         </div>
          <a href="javascript:void(0)" onclick="share()"><i class="fas fa-share-alt"></i></a>
-        <p><a href="https://leidemarketing.com">leidemarketing.com</a></p>  
+        <p> &#169 2021 - Leide Marketing.</p>  
     </footer>
     <script>
     function share(){
@@ -277,7 +235,7 @@
             navigator.share({
                 title: 'Leide Marketing',
                 text: 'Aqui estão todos os cursos que indico para que você tenha sucesso financeiro com o marketing digital.',
-                url: 'https://leidemarketing',
+                url: 'https://leidemarketing.com',
             })
             .then(() => console.log('Successful share'))
             .catch((error) => console.log('Error sharing', error));
